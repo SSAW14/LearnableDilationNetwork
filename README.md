@@ -9,7 +9,7 @@ This is a demo to train a Deeplab-LargeFOV semantic segmentation model with our 
 - Python 2 or Python 3.
 - CPU or NVIDIA GPU + CUDA CuDNN.
 
-# Compilation of Caffe
+## Compilation of Caffe
 Please follow the instruction from http://caffe.berkeleyvision.org/installation.html to compile our modified Caffe.
 ```bash
 cd caffe-dynamic-dilation
@@ -20,19 +20,20 @@ make test
 make runtest
 ```
 
-# Download initialization caffe
+## Download initialization caffe
 Please run our script to download the initialization caffe model.
 ```bash
 bash download_init_caffemodel.sh
 ```
 You can also download this file from http://liangchiehchen.com/projects/DeepLabv2_vgg.html.
 
-# Training
+## Training
+Train our learnable dilated convolution networks with provided script.
 ```bash
 bash run.sh
 ```
 
-# Citation
+## Citation
 If our work is useful for you, please consider citing:
 
 @inproceedings{yang_gcpr17,
